@@ -17,5 +17,14 @@
             // Animate the scroll
             $('html, body').animate({ scrollTop: 0 }, 250);
         });
+
+        $('#toggle-theme').on( 'click', function() {
+            var $body = $('body');
+            if ( $body.hasClass('dark') ) {
+                $body.removeClass('dark');
+            } else {
+                $body.addClass('dark');
+            }
+        });
     });
 }).call( this, jQuery );
