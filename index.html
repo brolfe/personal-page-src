@@ -7,11 +7,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
+        <!-- build:css main.min.css -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href=".tmp/main.css">
+        <!-- endbuild -->
 
+        <!-- build:js vendor/modernizr-2.6.2-respond-1.1.0.min.js -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
     <div class="navbar navbar-fixed-top">
@@ -110,12 +114,16 @@
       <footer>
         <p>&copy; ...nobody...c'mon</p>
       </footer>
-    </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.js"><\/script>')</script>
+    </div> <!-- /container -->        
 
+        <!-- build:js //ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js -->
+        <script src="js/vendor/jquery-1.10.1.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js main.min.js -->
         <script src="js/vendor/bootstrap.js"></script>
         <script src="js/vendor/jquery.scrollTo.js"></script>
-
         <script src="js/main.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
