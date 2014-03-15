@@ -118,6 +118,10 @@ body {
     margin-top: 25px;
 }
 
+.navbar-right {
+    padding-bottom: 10px;
+}
+
 .navbar li a {
     text-transform: uppercase;
 }
@@ -143,6 +147,7 @@ body {
 .bcr-content h2,
 .bcr-content p {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bcr-content .bcr-header-stripe {
@@ -159,19 +164,19 @@ body {
 @media (min-width: 768px) {
 
     .navbar a {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .bcr-content {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .bcr-content h4 {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     .bcr-content h2 {
-        font-size: 72px;
+        font-size: 48px;
     }
 
     footer {
@@ -202,6 +207,27 @@ body {
 
     .navbar .container > div {
         margin-top: 0px;
+    }
+
+    /* CONTAINER WIDTH ADJUSTMENT
+       ========================== */
+
+    .container.bcr-content,
+    .container.bcr-content .row > div {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container.bcr-content .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bcr-content h4,
+    .bcr-content h2,
+    .bcr-content p {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     /* FONT SIZE ADJUSTMENT
