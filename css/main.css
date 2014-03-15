@@ -1,0 +1,92 @@
+
+/* SOLARIZED LIGHT
+   =============== */
+
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+body,
+.navbar {
+    background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+    min-height: 100px;
+    box-shadow: 0px 5px 10px rgb(109, 109, 109);
+}
+
+.navbar .container > div {
+    margin-top: 25px;
+}
+
+.navbar a {
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+}
+
+.navbar a:hover {
+    color: rgb(151, 151, 151);
+}
+
+.navbar-toggle {
+    background-color: rgb(220, 220, 220);
+}
+
+.navbar-toggle .icon-bar {
+    background-color: rgb(51, 51, 51);
+}
+
+.navbar li a {
+    text-transform: uppercase;
+}
+
+.jumbotron  {
+    background-color: rgb(220, 220, 220);
+}
+
+.jumbotron img {
+    height: 300px;
+}
+
+.bcr-profile p {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.bcr-profile .bcr-stat {
+    font-weight: bold;
+}
+
+/* Adjust scrolling to account for fixed header */
+.bcr-content .bcr-section:before {
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+}
+ 
+
+.bcr-content {
+    font-size: 24px;
+}
+
+.bcr-content h4 {
+    font-size: 48px;
+}
+
+.bcr-content h4,
+.bcr-content h2,
+.bcr-content p {
+    padding-left: 20px;
+}
+
+.bcr-content .bcr-header-stripe {
+    background-color: rgb(220, 220, 220);
+    text-transform: uppercase;
+}
+
+.bcr-content h2 {
+    font-size: 72px;
+}
