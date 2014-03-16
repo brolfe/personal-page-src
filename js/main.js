@@ -2,6 +2,16 @@
 (function( $ ) {
     'use strict';
     $(function() {
+        // Set text so the evil spam robots dont find us
+        // base64 encoded version of my email address
+        var eaddr = atob('YnJ5YW50LnJvbGZlQGdtYWlsLmNvbQ==');
+        var $a = $('<a>', {
+            href: 'mailto:' + eaddr,
+            text: eaddr
+        });
+        $('#eaddr').append( $a );
+
+        // Nav bar stuff
         $('ul.nav').on( 'click', 'li a', function( ev ) {
             $('.navbar-collapse').collapse('hide');
 
@@ -14,6 +24,7 @@
             $('html, body').animate({ scrollTop: 0 }, 250);
         });
 
+        // Toggle solarized light and dark themes
         $('#toggle-theme').on( 'click', function() {
             $('.navbar-collapse').collapse('hide');
 
