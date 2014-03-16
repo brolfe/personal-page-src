@@ -41,7 +41,7 @@ body {
         color: @base01;
     }
 
-    h2 {
+    h2, h5 {
         color: @magenta;
     }
 
@@ -81,7 +81,7 @@ body.dark {
         color: @base1;
     }
 
-    h2 {
+    h2, h5 {
         color: @orange;
     }
 
@@ -143,15 +143,26 @@ body {
     visibility: hidden; 
 }
 
-.bcr-content h4,
-.bcr-content h2,
-.bcr-content p {
+.bcr-content > .bcr-section > div > * {
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .bcr-content .bcr-header-stripe {
+    padding-left: 0px;
+    padding-right: 0px;
     text-transform: uppercase;
+}
+
+.thumb {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.thumb:hover {
+    /* TODO opacity */
+    cursor: pointer;
 }
 
 /* FONT AND IMAGE SIZES
@@ -162,6 +173,10 @@ body {
 }
 
 @media (min-width: 768px) {
+    
+    .jumbotron p {
+        font-size: 20px;
+    }
 
     .navbar a {
         font-size: 20px;
@@ -170,9 +185,13 @@ body {
     .bcr-content {
         font-size: 20px;
     }
+    
+    .bcr-content h5 {
+        font-size: 36px;
+    }
 
     .bcr-content h4 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .bcr-content h2 {
@@ -230,8 +249,19 @@ body {
         padding-right: 10px;
     }
 
+    /* IMAGE SIZE ADJUSTMENT
+       ===================== */
+
+    .thumb {
+        width: 60%;
+    }
+
     /* FONT SIZE ADJUSTMENT
        ==================== */
+    
+    .jumbotron p {
+        font-size: 16px;
+    }
 
     .navbar a {
         font-size: 16px;
@@ -240,9 +270,13 @@ body {
     .bcr-content {
         font-size: 16px;
     }
+    
+    .bcr-content h5 {
+        font-size: 24px;
+    }
 
     .bcr-content h4 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .bcr-content h2 {
