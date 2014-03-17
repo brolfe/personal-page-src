@@ -86,7 +86,7 @@ module.exports = function(grunt) {
                         dest: 'dist/favicon.ico'
                     },
                     {
-                        src: [ 'img/*.jpg' ],
+                        src: [ 'img/*' ],
                         dest: 'dist/'
                     },
                     {
